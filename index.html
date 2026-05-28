@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiSAF Internship | Git & Version Control Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --primary-color: #2563eb;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent-green: #10b981;
+            --code-bg: #1e293b;
+            --code-text: #38bdf8;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .badge {
+            background-color: #dbeafe;
+            color: var(--primary-color);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 6px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 1.35rem;
+            margin-top: 0;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2::before {
+            content: "◆";
+            color: var(--accent-green);
+            font-size: 1rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        code {
+            display: block;
+            background-color: var(--code-bg);
+            color: var(--code-text);
+            padding: 14px;
+            border-radius: 8px;
+            font-family: "Fira Code", Consolas, Monaco, monospace;
+            font-size: 0.95rem;
+            overflow-x: auto;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="badge">Task 2 Deliverable</span>
+            <h1>Version Control Reference Portfolio</h1>
+            <p>Hands-on documentation of core Git command-line operations and repository architectures.</p>
+        </header>
+
+        <main class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <h2>Repository Initialization</h2>
+                <p>Used to start a brand-new local Git repository inside a project directory.</p>
+                <code>git init</code>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h2>Staging Operational Changes</h2>
+                <p>Prepares altered files and modified scripts for local saving by copying them to the staging area.</p>
+                <code>git add .</code>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h2>Recording Project Milestones</h2>
+                <p>Saves tracked, staged local configurations safely into the repository timeline with descriptive annotations.</p>
+                <code>git commit -m "Feat: Implement structural documentation module"</code>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <h2>Branch Isolation Management</h2>
+                <p>Creates isolated development environments to manage code changes cleanly without touching production branches.</p>
+                <code>git branch feature-documentation<br>git checkout feature-documentation</code>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <h2>Upstream Repository Synchronizations</h2>
+                <p>Connects local file architectures to remote hosting architectures and securely transfers state tracking timelines online.</p>
+                <code>git remote add origin [Repository-URL]<br>git push -u origin main</code>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 FlexiSAF Frontend Engineering Cohort. Formulated cleanly without dependencies.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
